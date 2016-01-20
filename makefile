@@ -13,6 +13,7 @@ CPPFLAGS += -fPIC
 build-stamp: stage-stamp
 	$(MAKE) -C $(pq_part_name) mkinstalldirs=$(part_dir)
 	$(MAKE) -C $(pq_part_name) mkinstalldirs=$(part_dir) DESTDIR=$(stage_dir) install
+	cp $(source_dir)/libexec/instance_setup.sh $(stage_dir)/$(part_dir)/libexec
 	touch $@
 
 stage-stamp: configure-stamp
