@@ -1,6 +1,6 @@
 include $(PQ_FACTORY)/factory.mk
 
-pq_part_name := ruby-2.2.1
+pq_part_name := ruby-2.3.1
 pq_part_file := $(pq_part_name).tar.gz
 
 pq_ruby_configuration_flags += --prefix=$(part_dir)
